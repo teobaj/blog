@@ -23,7 +23,9 @@ const config = {
 	plugins: [
 		skeleton({
 			themes: { preset: [ "wintry" ] }
-		})
+		}),
+		require('@tailwindcss/typography'),
+
 	]
 	
 	

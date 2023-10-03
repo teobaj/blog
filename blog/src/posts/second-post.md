@@ -11,7 +11,7 @@ img: https://picsum.photos/900/600
 
 ## Markdown
 
-Hey friends! 👋
+### Hey friends! 👋
 
 ```ts
 function delete(name: string) {

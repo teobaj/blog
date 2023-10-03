@@ -16,7 +16,7 @@
           <span>#{category}</span>
         {/each}
         </p>
-        <p class="font-bold">{post.title}</p>
+        <a class="font-bold" href={`/posts/${post.slug}`}>{post.title}</a>
         <p>{post.description}</p>
       </div>
       <hr/>
