@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { AppBar } from '@skeletonlabs/skeleton';
-
+  import { LightSwitch } from '@skeletonlabs/skeleton';
+  
 </script>
 
 
@@ -12,5 +13,7 @@
     <a href="/about">ABOUT </a>
     <a href="/contact">CONTACT</a>
   </div>
-	<svelte:fragment slot="trail">Theme</svelte:fragment>
+	<svelte:fragment slot="trail">
+    <LightSwitch />
+  </svelte:fragment>
 </AppBar> 

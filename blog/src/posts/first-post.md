@@ -9,9 +9,9 @@ published: true
 img: https://picsum.photos/800/600
 ---
 
-## Markdown
+# I'm building this using Markdown
 
-# Hey friends! 👋
+## Hey friends! 👋
 
 ```ts
 function greet(name: string) {

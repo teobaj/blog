@@ -5,9 +5,9 @@
 
 </script>
 
-<div class="h-screen w-screen wrapper">
+<div class="h-screen w-screen wrapper bg-gradient">
 	<Header />
-		<main>
+		<main class="flex flex-col items-center">
 			<slot />
 		</main>
 	<Footer />

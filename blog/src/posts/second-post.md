@@ -18,3 +18,5 @@ function delete(name: string) {
 	console.log(`DELETE ${name}! 👋`)
 }
 ```
+
+Ce faci coae?
