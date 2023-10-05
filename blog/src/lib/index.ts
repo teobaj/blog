@@ -1,2 +1,2 @@
 // place files you want to import through the `$lib` alias in this folder.
-export { Post } from './types';
+export type { Post } from './types';
