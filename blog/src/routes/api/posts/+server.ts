@@ -5,8 +5,8 @@ function getSlugFromPath(path: string): string {
   return path.split('/').at(-1).replace('.md', '');
 }
 
-async function getPosts() {
-  const posts: Post[] = [];
+async function getPosts(categories: string[]) {
+  let posts: Post[] = [];
 
   const paths = import.meta.glob('/src/posts/*.md', { eager: true });
   Object.entries(paths).forEach(([path, file]) => {
@@ -18,13 +18,25 @@ async function getPosts() {
       posts.push(post);
     }
   });
+
+  if (categories?.length) {
+    posts = posts.filter((post) => {
+      return post.categories.some((category: string) =>
+        categories.includes(category)
+      );
+    });
+  }
+
   return posts.sort(
     (first, second) =>
       new Date(second.date).getTime() - new Date(first.date).getTime()
   );
 }
 
-export async function GET() {
-  const posts = await getPosts();
+export async function GET({ url }) {
+  const categories: string[] =
+    url.searchParams.get('categories')?.split(',') ?? [];
+  const posts: Post[] = await getPosts(categories);
+
   return json(posts);
 }

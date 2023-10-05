@@ -18,7 +18,7 @@ So far I can add new blog posts writing them as Markdown files inside posts dir.
 
 ## TO DO:
 
-- be able to search posts by category
+- ~~be able to search posts by category~~
 - ~~add about and contact pages~~
 - ~~add theme switcher using skeleton themes~~
 - ~~add page transitions~~

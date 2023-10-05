@@ -5,6 +5,14 @@ date: '2023-4-14'
 categories:
   - sveltekit
   - svelte
+  - vite
+  - javascript
+  - typescript
+  - electron
+  - lerna
+  - react
+  - vue
+  - nodejs
 published: true
 img: https://picsum.photos/800/600
 ---
