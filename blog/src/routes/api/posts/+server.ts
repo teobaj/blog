@@ -1,5 +1,5 @@
 import { json } from '@sveltejs/kit';
-import { Post } from '$lib/types';
+import { Post } from '$lib';
 
 function getSlugFromPath(path: string): string {
   return path.split('/').at(-1).replace('.md', '');
